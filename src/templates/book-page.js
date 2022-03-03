@@ -6,20 +6,18 @@ import {
   ArrowNarrowLeftIcon,
   ArrowNarrowRightIcon,
 } from '@heroicons/react/solid'
-import BlogPageTemplate from './BlogPageTemplate'
+import BookPageTemplate from './BookPageTemplate'
 import Layout from '../components/Layout'
 
-const BlogPage = ({ data, pageContext }) => {
+const BookPage = ({ data, pageContext }) => {
   const { next, previous } = pageContext
   const { markdownRemark: post } = data
   const { frontmatter: fm } = post
   return (
     <Layout>
       <MyHelmet title={fm.title} description={post.excerpt} />
-      <BlogPageTemplate
-        location={fm.location}
+      <BookPageTemplate
         title={fm.title}
-        date={fm.date}
         image={fm.featuredimage}
         body={post.html}
       />
@@ -27,7 +25,7 @@ const BlogPage = ({ data, pageContext }) => {
       {/* Links to previous and next project */}
       <Container className=''>
         <div className='sm:flex sm:justify-between sm:items-center sm:gap-4 border-t py-4'>
-          {previous && previous.frontmatter.templateKey === 'blog-page' ? (
+          {previous && previous.frontmatter.templateKey === 'book-page' ? (
             <Link to={previous.fields.slug} className='group'>
               <div className='flex items-center gap-x-2 text-gray-500'>
                 <ArrowNarrowLeftIcon className='w-5 h-5' />
@@ -43,7 +41,7 @@ const BlogPage = ({ data, pageContext }) => {
           ) : (
             <div />
           )}
-          {next && next.frontmatter.templateKey === 'blog-page' ? (
+          {next && next.frontmatter.templateKey === 'book-page' ? (
             <div className='mt-6 sm:mt-0'>
               <Link to={next.fields.slug} className='group sm:text-right'>
                 <div className='flex items-center gap-x-2 text-gray-500 sm:justify-end'>
@@ -67,17 +65,16 @@ const BlogPage = ({ data, pageContext }) => {
   )
 }
 
-export default BlogPage
+export default BookPage
 
-export const blogQuery = graphql`
-  query BlogPage($id: String!) {
+export const BookQuery = graphql`
+  query BookPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       excerpt
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        location
         featuredimage {
           alt
           image {

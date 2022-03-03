@@ -2,10 +2,10 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import MyHelmet from '../components/MyHelmet'
 import { Container } from '../components/Sections'
-// import {
-//   ArrowNarrowLeftIcon,
-//   ArrowNarrowRightIcon,
-// } from "@heroicons/react/solid"
+import {
+  ArrowNarrowLeftIcon,
+  ArrowNarrowRightIcon,
+} from '@heroicons/react/solid'
 import NewsPageTemplate from './NewsPageTemplate'
 import Layout from '../components/Layout'
 
@@ -30,7 +30,7 @@ const NewsPage = ({ data, pageContext }) => {
           {previous && previous.frontmatter.templateKey === 'project-page' ? (
             <Link to={previous.fields.slug} className='group'>
               <div className='flex items-center gap-x-2 text-gray-500'>
-                {/* <ArrowNarrowLeftIcon className="w-5 h-5" /> */}
+                <ArrowNarrowLeftIcon className='w-5 h-5' />
                 Next
               </div>
               <p className='mt-4 uppercase text-green-600 font-bold text-xs tracking-wide'>
@@ -48,7 +48,7 @@ const NewsPage = ({ data, pageContext }) => {
               <Link to={next.fields.slug} className='group sm:text-right'>
                 <div className='flex items-center gap-x-2 text-gray-500 sm:justify-end'>
                   Previous
-                  {/* <ArrowNarrowRightIcon className="w-5 h-5" /> */}
+                  <ArrowNarrowRightIcon className='w-5 h-5' />
                 </div>
                 <p className='mt-4 uppercase text-green-600 font-bold text-xs tracking-wide'>
                   {next.frontmatter.location}

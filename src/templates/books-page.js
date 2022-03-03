@@ -1,20 +1,19 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import MyHelmet from '../components/MyHelmet'
-import CourtLawPageTemplate from './CourtLawPageTemplate'
+import BooksPageTemplate from './BooksPageTemplate'
 import Layout from '../components/Layout'
 
 const BooksPage = ({ data }) => {
-  const { markdownRemark: post } = data
-  const { frontmatter: fm } = post
-
+  const { frontmatter: fm } = data.markdownRemark
+  const { edges: posts } = data.allMarkdownRemark
   return (
     <Layout>
       <MyHelmet title={fm.title} description={fm.subheading} />
-      <CourtLawPageTemplate
+      <BooksPageTemplate
         heading={fm.heading}
         subheading={fm.subheading}
-        html={post.html}
+        posts={posts}
       />
     </Layout>
   )
@@ -30,6 +29,37 @@ export const booksPageQuery = graphql`
         title
         heading
         subheading
+      }
+    }
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "book-page" } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            featuredimage {
+              alt
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 640
+                    placeholder: BLURRED
+                    aspectRatio: 1.5
+                    transformOptions: { fit: COVER, cropFocus: CENTER }
+                  )
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

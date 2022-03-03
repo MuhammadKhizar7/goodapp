@@ -1,20 +1,16 @@
 import React from 'react'
 import Header from '../components/Header'
-import Content from '../components/Content'
-import { Container, SectionHeading } from '../components/Sections'
+import { Container, CardSet } from '../components/Sections'
 
-function BooksPageTemplate({ heading, subheading, html }) {
+function NewsListPageTemplate({ heading, subheading, posts = [] }) {
   return (
-    <>
+    <div>
       <Header heading={heading} subheading={subheading} />
-      <Content className={''} html={html} />
-      <Container className={''}>
-        <div className='max-w-3xl mx-auto'>
-          <SectionHeading>Our team</SectionHeading>
-        </div>
+      <Container className='-mt-20 sm:-mt-24 lg:-mt-32'>
+        <CardSet posts={posts} className={''} />
       </Container>
-    </>
+    </div>
   )
 }
 
-export default BooksPageTemplate
+export default NewsListPageTemplate

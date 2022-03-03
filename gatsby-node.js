@@ -103,8 +103,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Office {
-      address: String @markdown
-      phone: String @markdown
+      address: String
+      phone: String
     }
   `
   createTypes(typeDefs)

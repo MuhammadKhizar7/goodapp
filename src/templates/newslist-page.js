@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 const NewsListPage = ({ data }) => {
   const { frontmatter: fm } = data.markdownRemark
   const { edges: posts } = data.allMarkdownRemark
-  console.log(data)
   return (
     <Layout>
       <MyHelmet title={fm.title} description={fm.subheading} />
