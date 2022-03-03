@@ -223,16 +223,36 @@ const IndexPageTemplate = ({
         </div>
       </Container>
 
-      {/* About section */}
-      {/* <TextImageSplit image={introduction.image}>
-        <SectionHeading>{introduction.heading}</SectionHeading>
-        <p className='mt-2 text-gray-600 dark:text-gray-300'>
-          {introduction.description}
-        </p>
-        <SecondaryButton to={introduction.button.url} className='mt-6 lg:mt-10'>
-          {introduction.button.label}
-        </SecondaryButton>
-      </TextImageSplit> */}
+      {/* Featured news */}
+      <Container className={''}>
+        <div className='flex justify-between items-baseline'>
+          <SectionHeading>Our blog posts</SectionHeading>
+          <Link
+            className='text-green-700 underline hover:text-green-800'
+            to='/blog'
+          >
+            View all
+          </Link>
+        </div>
+        <div className='mt-8'>
+          <CardSet className={''} posts={posts} />
+        </div>
+      </Container>
+      {/* Featured books */}
+      <Container className={''}>
+        <div className='flex justify-between items-baseline'>
+          <SectionHeading>Our blog posts</SectionHeading>
+          <Link
+            className='text-green-700 underline hover:text-green-800'
+            to='/blog'
+          >
+            View all
+          </Link>
+        </div>
+        <div className='mt-8'>
+          <CardSet className={''} posts={posts} />
+        </div>
+      </Container>
     </div>
   )
 }
