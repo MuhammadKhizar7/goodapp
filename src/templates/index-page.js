@@ -10,7 +10,9 @@ const IndexPage = ({ data }) => {
   const { frontmatter: fm } = data.markdownRemark
 
   // featured posts
-  const { edges: posts } = data.allMarkdownRemark
+  const { edges: posts } = data.posts
+  const { edges: books } = data.books
+  const { edges: news } = data.news
 
   return (
     <Layout>
@@ -19,6 +21,8 @@ const IndexPage = ({ data }) => {
         heading={fm.heading}
         subheading={fm.subheading}
         posts={posts}
+        books={books}
+        news={news}
         introduction={fm.introduction}
       />
     </Layout>
@@ -53,7 +57,7 @@ export const indexPageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(
+    posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
         frontmatter: {
@@ -90,7 +94,7 @@ export const indexPageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(
+    news: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
         frontmatter: {
@@ -127,7 +131,7 @@ export const indexPageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(
+    books: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
         frontmatter: {

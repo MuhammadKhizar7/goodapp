@@ -9,6 +9,8 @@ const IndexPageTemplate = ({
   heading,
   subheading,
   posts = [],
+  books = [],
+  news = [],
   introduction,
 }) => {
   return (
@@ -226,31 +228,31 @@ const IndexPageTemplate = ({
       {/* Featured news */}
       <Container className={''}>
         <div className='flex justify-between items-baseline'>
-          <SectionHeading>Our blog posts</SectionHeading>
+          <SectionHeading>Our news</SectionHeading>
           <Link
             className='text-green-700 underline hover:text-green-800'
-            to='/blog'
+            to='/news'
           >
             View all
           </Link>
         </div>
         <div className='mt-8'>
-          <CardSet className={''} posts={posts} />
+          <CardSet className={''} posts={news} />
         </div>
       </Container>
       {/* Featured books */}
       <Container className={''}>
         <div className='flex justify-between items-baseline'>
-          <SectionHeading>Our blog posts</SectionHeading>
+          <SectionHeading>Our books</SectionHeading>
           <Link
             className='text-green-700 underline hover:text-green-800'
-            to='/blog'
+            to='/books'
           >
             View all
           </Link>
         </div>
         <div className='mt-8'>
-          <CardSet className={''} posts={posts} />
+          <CardSet className={''} posts={books} />
         </div>
       </Container>
     </div>
