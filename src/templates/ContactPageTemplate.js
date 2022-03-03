@@ -2,8 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import { TextImageSplit, SectionHeading } from '../components/Sections'
 
-function ContactPageTemplate({ heading, subheading, contactform, office }) {
-  console.log(office)
+function ContactPageTemplate({ heading, subheading, contactform }) {
   return (
     <div>
       <Header heading={heading} subheading={subheading} />
@@ -117,7 +116,7 @@ function ContactPageTemplate({ heading, subheading, contactform, office }) {
         </form>
       </TextImageSplit>
 
-      <TextImageSplit image={office.image} imageLeft={true}>
+      {/* <TextImageSplit image={office.image} imageLeft={true}>
         <p className='text-green-700 font-semibold tracking-wide'>
           {office.tagline}
         </p>
@@ -132,7 +131,7 @@ function ContactPageTemplate({ heading, subheading, contactform, office }) {
             dangerouslySetInnerHTML={{ __html: office.phone.html }}
           />
         </div>
-      </TextImageSplit>
+      </TextImageSplit> */}
     </div>
   )
 }

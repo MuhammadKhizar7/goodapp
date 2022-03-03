@@ -1,20 +1,19 @@
 import React from 'react'
-import Header from '../components/Header'
+import Image from '../components/Image'
 import Content from '../components/Content'
-import { Container, SectionHeading } from '../components/Sections'
+import { ProjectHeader } from '../components/Header'
+import { Container } from '../components/Sections'
 
-function IntroductionPageTemplate({ heading, subheading, html }) {
+function NewsPageTemplate({ title, location, date, image, body }) {
   return (
     <>
-      <Header heading={heading} subheading={subheading} />
-      <Content className={''} html={html} />
-      <Container className={''}>
-        <div className='max-w-3xl mx-auto'>
-          <SectionHeading>Our team</SectionHeading>
-        </div>
+      <ProjectHeader heading={title} location={location} date={date} />
+      <Container className='text-center -mt-24 sm:-mt-28 lg:-mt-36'>
+        <Image className='rounded-md' image={image.image} alt={image.alt} />
       </Container>
+      <Content html={body} className='-mt-20' />
     </>
   )
 }
 
-export default IntroductionPageTemplate
+export default NewsPageTemplate
