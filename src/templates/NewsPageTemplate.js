@@ -4,10 +4,10 @@ import Content from '../components/Content'
 import { ProjectHeader } from '../components/Header'
 import { Container } from '../components/Sections'
 
-function NewsPageTemplate({ title, location, date, image, body }) {
+function NewsPageTemplate({ title, date, image, body }) {
   return (
     <>
-      <ProjectHeader heading={title} location={location} date={date} />
+      <ProjectHeader heading={title} date={date} />
       <Container className='text-center -mt-24 sm:-mt-28 lg:-mt-36'>
         <Image className='rounded-md' image={image.image} alt={image.alt} />
       </Container>

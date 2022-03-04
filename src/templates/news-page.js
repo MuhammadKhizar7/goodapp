@@ -17,7 +17,6 @@ const NewsPage = ({ data, pageContext }) => {
     <Layout>
       <MyHelmet title={fm.title} description={post.excerpt} />
       <NewsPageTemplate
-        location={fm.location}
         title={fm.title}
         date={fm.date}
         image={fm.featuredimage}
@@ -33,9 +32,6 @@ const NewsPage = ({ data, pageContext }) => {
                 <ArrowNarrowLeftIcon className='w-5 h-5' />
                 Next
               </div>
-              <p className='mt-4 uppercase text-green-600 font-bold text-xs tracking-wide'>
-                {previous.frontmatter.location}
-              </p>
               <h3 className='font-bold text-lg text-gray-700 group-hover:underline'>
                 {previous.frontmatter.title}
               </h3>

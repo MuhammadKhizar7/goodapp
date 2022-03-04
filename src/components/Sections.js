@@ -71,7 +71,7 @@ export const CardSet = ({ className, posts }) => {
             image={fm.featuredimage}
             heading={fm.title}
             date={fm.date}
-            location={fm.location}
+            excerpt={post.excerpt}
             to={post.fields.slug}
             key={idx}
             url=''

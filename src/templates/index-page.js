@@ -6,7 +6,6 @@ import Layout from '../components/Layout'
 import IndexPageTemplate from './IndexPageTemplate'
 
 const IndexPage = ({ data }) => {
-  console.log(data)
   const { frontmatter: fm } = data.markdownRemark
 
   // featured posts
@@ -68,7 +67,7 @@ export const indexPageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 200)
           id
           fields {
             slug
@@ -77,7 +76,6 @@ export const indexPageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
-            location
             featuredimage {
               alt
               image {
@@ -105,7 +103,7 @@ export const indexPageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 200)
           id
           fields {
             slug
@@ -114,7 +112,6 @@ export const indexPageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
-            location
             featuredimage {
               alt
               image {
@@ -142,7 +139,7 @@ export const indexPageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 200)
           id
           fields {
             slug

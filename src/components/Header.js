@@ -19,12 +19,13 @@ function Header({ heading, subheading }) {
 }
 
 // A different header for the project page
-export function ProjectHeader({ heading, location, date }) {
+export function ProjectHeader({ heading, date }) {
   return (
     <header className='bg-green-700 py-24 sm:pt-28 sm:pb-32 md:pt-32 md:pb-32 lg:py-36'>
       <div className='mx-auto max-w-4xl text-center px-4 sm:px-6 lg:px-8'>
         <div className='text-green-100 sm:text-lg lg:text-xl lg:mt-6'>
-          {location} &bull; {date}
+          {' '}
+          &bull; {date}
         </div>
         <h1 className='mt-2 text-2xl font-bold text-white sm:text-3xl lg:text-4xl'>
           {heading}
