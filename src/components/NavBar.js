@@ -53,7 +53,7 @@ const PartialNavLink = ({ children, ...rest }) => {
 
 const Navbar = ({ className }) => {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
 
   return (
     <>
