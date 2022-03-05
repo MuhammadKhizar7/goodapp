@@ -70,7 +70,6 @@ collections:
               { label: Alt, name: alt, widget: string },
             ],
         }
-      - { label: Location, name: location, widget: string }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       # - {label: "Tags", name: "tags", widget: "list"}
   - name: 'books'
@@ -85,7 +84,7 @@ collections:
           label: 'Template Key',
           name: 'templateKey',
           widget: 'hidden',
-          default: 'Book-page',
+          default: 'book-page',
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
