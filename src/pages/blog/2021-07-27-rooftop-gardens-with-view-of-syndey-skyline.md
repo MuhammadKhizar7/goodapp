@@ -4,7 +4,7 @@ title: Rooftop gardens with view of Syndey skyline
 date: 2021-07-21T10:14:24.359Z
 featured: true
 featuredimage:
-  image: /img/chuttersnap-nxjyzlbnyuq-unsplash.jpg
+  image: /img/anas-miah-hJXiPheKFus-unsplash-min.jpg
   alt: rooftop garden
 location: Sydney, Australia
 ---
