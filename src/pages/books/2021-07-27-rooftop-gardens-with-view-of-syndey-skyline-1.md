@@ -3,6 +3,7 @@ templateKey: book-page
 title: Vertical garden wall at local park and café
 date: 2021-07-25T16:02:13.958Z
 featured: true
+download: https://www.google.com
 featuredimage:
   image: /img/yasmine-arfaoui-R6rh5ttDO-4-unsplash-min.jpg
   alt: Woman in front of building with green wall

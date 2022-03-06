@@ -19,6 +19,8 @@ const BookPage = ({ data, pageContext }) => {
       <BookPageTemplate
         title={fm.title}
         image={fm.featuredimage}
+        date={fm.date}
+        download={fm.download}
         body={post.html}
       />
 
@@ -75,6 +77,7 @@ export const BookQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        download
         featuredimage {
           alt
           image {

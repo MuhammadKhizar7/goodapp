@@ -18,7 +18,14 @@ const BookPagePreview = ({ entry, getAsset }) => {
     // @ts-ignore
     const body = data.body ? marked(data.body) : null
 
-    return <BookPageTemplate title={data.title} image={image} body={body} />
+    return (
+      <BookPageTemplate
+        title={data.title}
+        date={data.date}
+        image={image}
+        body={body}
+      />
+    )
   } else {
     return <div>Loading...</div>
   }

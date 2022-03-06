@@ -3,6 +3,7 @@ templateKey: book-page
 title: New entry and lobby of Palace District hotel
 date: 2021-07-23T10:42:17.142Z
 featured: true
+download: https://www.google.com
 featuredimage:
   alt: Hotel entry with lots of plants
   image: /img/nick-night-cjqtvc9p1xm-unsplash.jpg
