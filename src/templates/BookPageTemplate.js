@@ -3,7 +3,7 @@ import Image from '../components/Image'
 import Content from '../components/Content'
 import { Container } from '../components/Sections'
 import { ProjectHeader } from '../components/Header'
-import { SecondaryButton } from '../components/Buttons'
+import { SecondaryButtonLink } from '../components/Buttons'
 
 function NewsPageTemplate({ title, image, date, download, body }) {
   return (
@@ -14,9 +14,9 @@ function NewsPageTemplate({ title, image, date, download, body }) {
       </Container>
       <Content html={body} className='-mt-20' />
       <div className='flex justify-center'>
-        <SecondaryButton href={download} target='_blank'>
+        <SecondaryButtonLink href={download} target='_blank'>
           Click to download
-        </SecondaryButton>
+        </SecondaryButtonLink>
       </div>
     </>
   )

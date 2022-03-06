@@ -9,6 +9,7 @@ module.exports = {
     His prophethood will continue until the judgement day and the day after,
     only that person can claim to be a Muslim who believes in Khatme Nubuwwat and confesses.`,
     siteUrl: 'http://www.khatmenubuwwat.org',
+    siteName: 'Khatm-e-Nabawat',
   },
   plugins: [
     {
