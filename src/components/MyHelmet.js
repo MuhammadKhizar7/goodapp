@@ -8,7 +8,7 @@ function MyHelmet({ title, description }) {
       query SITE_Name_QUERY {
         site {
           siteMetadata {
-            siteName
+            title
           }
         }
       }
@@ -18,7 +18,7 @@ function MyHelmet({ title, description }) {
     <Helmet>
       {title ? (
         <title>
-          {title} | {site.siteMetadata.siteName}
+          {title} | {site.siteMetadata.title}
         </title>
       ) : null}
       {description ? <meta name='description' content={description} /> : null}
