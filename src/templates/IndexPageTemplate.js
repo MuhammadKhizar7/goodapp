@@ -228,7 +228,7 @@ const IndexPageTemplate = ({
       {/* Featured news */}
       <Container className={''}>
         <div className='flex justify-between items-baseline'>
-          <SectionHeading>Our news</SectionHeading>
+          <SectionHeading>Latest news</SectionHeading>
           <Link
             className='text-green-700 underline hover:text-green-800'
             to='/news'
@@ -243,7 +243,7 @@ const IndexPageTemplate = ({
       {/* Featured books */}
       <Container className={''}>
         <div className='flex justify-between items-baseline'>
-          <SectionHeading>Our books</SectionHeading>
+          <SectionHeading>Our new books</SectionHeading>
           <Link
             className='text-green-700 underline hover:text-green-800'
             to='/books'

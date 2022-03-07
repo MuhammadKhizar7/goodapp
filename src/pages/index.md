@@ -1,8 +1,7 @@
 ---
 templateKey: index-page
 title: Khatme Nubuwwat means that Hazrat Muhammad (P.B.U.H) is the Last of the
-  Prophets. The process and routine of appointing Prophets and Messengers by
-  Almighty Allah has been terminated, finished, ended, stopped, and sealed.
+  Prophets.
 image: /img/ryan-pradipta-putra-MWJ7JpFBlGk-unsplash-min.jpg
 heading: انا آخرالانبياء واناآخرالامم
 subheading: “I am the last Prophet and you are the last Ummah” (Ibne Maja)

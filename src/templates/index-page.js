@@ -12,10 +12,10 @@ const IndexPage = ({ data }) => {
   const { edges: posts } = data.posts
   const { edges: books } = data.books
   const { edges: news } = data.news
-
+  console.log(fm)
   return (
     <Layout>
-      <MyHelmet title={fm.title} description={fm.subheading} />
+      <MyHelmet title={fm.title} description={fm.introduction.description} />
       <IndexPageTemplate
         heading={fm.heading}
         subheading={fm.subheading}
