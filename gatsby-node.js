@@ -1,8 +1,6 @@
 const path = require('path')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
-const remark = require(`remark`)
-const html = require(`remark-html`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -13,7 +11,10 @@ exports.createPages = ({ graphql, actions }) => {
         `
           query {
             allMarkdownRemark(
-              sort: { order: DESC, fields: [frontmatter___date] }
+              sort: {
+                order: DESC
+                fields: [frontmatter___templateKey, frontmatter___date]
+              }
             ) {
               edges {
                 node {
@@ -32,7 +33,6 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     title
                     templateKey
-                    location
                   }
                 }
                 previous {
@@ -42,7 +42,6 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     title
                     templateKey
-                    location
                   }
                 }
               }

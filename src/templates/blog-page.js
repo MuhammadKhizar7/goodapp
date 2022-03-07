@@ -10,7 +10,6 @@ import BlogPageTemplate from './BlogPageTemplate'
 import Layout from '../components/Layout'
 
 const BlogPage = ({ data, pageContext }) => {
-  console.log(pageContext)
   const { next, previous } = pageContext
   const { markdownRemark: post } = data
   const { frontmatter: fm } = post
@@ -47,9 +46,6 @@ const BlogPage = ({ data, pageContext }) => {
                   Previous
                   <ArrowNarrowRightIcon className='w-5 h-5' />
                 </div>
-                <p className='mt-4 uppercase text-green-600 font-bold text-xs tracking-wide'>
-                  {next.frontmatter.location}
-                </p>
                 <h3 className='font-bold text-lg text-gray-700 group-hover:underline'>
                   {next.frontmatter.title}
                 </h3>

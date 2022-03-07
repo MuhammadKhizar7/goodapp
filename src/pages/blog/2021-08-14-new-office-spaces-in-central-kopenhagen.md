@@ -6,7 +6,6 @@ featured: false
 featuredimage:
   image: /img/ricardo-gomez-angel-opfpvxmrpp8-unsplash.jpg
   alt: people working in office with plants
-location: Kopenhagen, Denmark
 ---
 
 Praesent purus leo, dictum eget malesuada quis, tempus non enim. Donec interdum id nisi et ullamcorper. Curabitur vulputate nulla non pharetra lobortis. Suspendisse potenti. Nulla facilisi. Suspendisse eu ultricies tortor, vitae iaculis velit. Quisque a tellus sagittis, convallis dolor a, placerat tortor. Curabitur pulvinar sapien eu ligula mattis mollis. Aliquam id ornare leo. Donec quam orci, viverra vel hendrerit mattis, vehicula et ex. In vitae tincidunt neque.

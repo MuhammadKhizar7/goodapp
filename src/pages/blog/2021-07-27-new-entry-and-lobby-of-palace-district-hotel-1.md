@@ -6,7 +6,6 @@ featured: false
 featuredimage:
   alt: Modern building with green outdoor space
   image: /img/ricardo-gomez-angel-opfpvxmrpp8-unsplash.jpg
-location: Bern, Swizerland
 ---
 
 Photo by [Ricardo Gomez Angel](https://unsplash.com/@ripato?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/kDVcVtpJNeA/urban-garden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

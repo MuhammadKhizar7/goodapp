@@ -6,7 +6,6 @@ featured: false
 featuredimage:
   image: /img/yasmine-arfaoui-R6rh5ttDO-4-unsplash-min.jpg
   alt: Woman in front of building with green wall
-location: Paris, France
 ---
 
 Photo by [Sirisvisual](https://unsplash.com/@sirisvisual?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/kDVcVtpJNeA/urban-garden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

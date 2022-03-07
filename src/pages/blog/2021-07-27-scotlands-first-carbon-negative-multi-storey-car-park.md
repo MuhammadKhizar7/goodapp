@@ -6,7 +6,6 @@ featured: true
 featuredimage:
   image: /img/danist-dqxiw7ncb9q-unsplash.jpg
   alt: multi-storey car park with green plants
-location: Glasgow, Scotland
 ---
 
 Photo by [Danist Soh](https://unsplash.com/@danist07?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/kDVcVtpJNeA/urban-garden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

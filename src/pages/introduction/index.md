@@ -2,127 +2,34 @@
 templateKey: introduction-page
 title: Introduction
 heading: Introduction
-subheading: Our values, mission and culture
+subheading: What is Khatme Nubuwwat and why it is obligatory to become muslim
 ---
+# **What is Khatme Nubuwwat?**
 
-# Markdown Cheat Sheet
+Khatme Nubuwwat means that Hazrat Muhammad (P.B.U.H) is the Last of the Prophets. The process and routine of appointing Prophets and Messengers by Almighty Allah has been terminated, finished, ended, stopped, and sealed. None will be appointed as prophet after Hazrat Muhammad (P.B.U.H). His prophethood will continue until the judgement day and the day after, only that person can claim to be a Muslim who believes in Khatme Nubuwwat and confesses.
 
-Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
 
-This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax) and [extended syntax](https://www.markdownguide.org/extended-syntax).
 
-## Basic Syntax
+> "Muhammad (P.B.U.H) is not the father of any men among you, but he is the Messenger of ALLAH and the last of the Prophets; and ALLAH is aware of all things". (Quran, Al-Ahzab 33:40)"
 
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
 
-### Heading
 
-# H1
+#### What is Qadiyanism (or so-called Ahmadiya)?
 
-## H2
 
-### H3
 
-### Bold
+Qadiyanism is a movement started in a town called Qadiyan in India by a man called Mirza Ghulam Ahmad (1839 - 1908). Initially, he declared himself as a Muslim writer; then he announced himself as a revivalist (Mujaddid); in 1891, he claimed to be the Promised Mehdi and the Promised Messiah; and in 1901, he proclaimed himself a prophet of God! In 1914 a split took place in the Qadiyani group with the accession of Mirza Bashiruddin Mahmood Ahmad, the 2nd successor; over definitions of doctrines forming the mainstream of Qadiani group. They are respectively known as Qadiani and Lahori sects. Both Qadianis group fraudulently claim to be one of the Muslim sects but infact they are unrighteous cult, kafir and non-muslim. Mirza Ghulam Qadiyani died on 26th May 1908 in Lahore (Pakistan) through illness being a victim of cholera. Mirza Ghulam was buried in a village of Qadiyan.
 
-**bold text**
+The Resolution of the Rabitah Al-Alam Al-Islami (Makkah) and Pakistan's constitutional amendment of 1974 declared the Qadianism (Qadianis and Lahoris) as non-Muslims.
 
-### Italic
 
-_italicized text_
 
-### Blockquote
+**Purpose of this website**
 
-> blockquote
 
-### Ordered List
 
-1. First item
-2. Second item
-3. Third item
+Our organisation, through this web site, attempts to create awareness about the Qadiani (Ahmadiyya). We also endeavour to provide answers to the numerous requests we receive from the worldwide Muslim community for information on this group.
 
-### Unordered List
+> "Ahmadis are traitors both to Islam and to India"
 
-- First item
-- Second item
-- Third item
-
-### Code
-
-`code`
-
-### Horizontal Rule
-
----
-
-### Link
-
-[Markdown Guide](https://www.markdownguide.org)
-
-### Image
-
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
-
-## Extended Syntax
-
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-### Table
-
-| Syntax    | Description |
-| --------- | ----------- |
-| Header    | Title       |
-| Paragraph | Text        |
-
-### Fenced Code Block
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-### Footnote
-
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-### Heading ID
-
-### My Great Heading {#custom-id}
-
-### Definition List
-
-term
-: definition
-
-### Strikethrough
-
-~~The world is flat.~~
-
-### Task List
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-### Emoji
-
-That is so funny! :joy:
-
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
-
-### Highlight
-
-I need to highlight these ==very important words==.
-
-### Subscript
-
-H~2~O
-
-### Superscript
-
-X^2^
+ (Sir Allama Muhammad Iqbal’s letter to Pandit Jawahar Lal Nehru), Lahore, June 21, 1936

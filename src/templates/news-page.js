@@ -23,10 +23,10 @@ const NewsPage = ({ data, pageContext }) => {
         body={post.html}
       />
 
-      {/* Links to previous and next project */}
+      {/* Links to previous and next news */}
       <Container className=''>
         <div className='sm:flex sm:justify-between sm:items-center sm:gap-4 border-t py-4'>
-          {previous && previous.frontmatter.templateKey === 'project-page' ? (
+          {previous && previous.frontmatter.templateKey === 'news-page' ? (
             <Link to={previous.fields.slug} className='group'>
               <div className='flex items-center gap-x-2 text-gray-500'>
                 <ArrowNarrowLeftIcon className='w-5 h-5' />
@@ -39,16 +39,13 @@ const NewsPage = ({ data, pageContext }) => {
           ) : (
             <div />
           )}
-          {next && next.frontmatter.templateKey === 'project-page' ? (
+          {next && next.frontmatter.templateKey === 'news-page' ? (
             <div className='mt-6 sm:mt-0'>
               <Link to={next.fields.slug} className='group sm:text-right'>
                 <div className='flex items-center gap-x-2 text-gray-500 sm:justify-end'>
                   Previous
                   <ArrowNarrowRightIcon className='w-5 h-5' />
                 </div>
-                <p className='mt-4 uppercase text-green-600 font-bold text-xs tracking-wide'>
-                  {next.frontmatter.location}
-                </p>
                 <h3 className='font-bold text-lg text-gray-700 group-hover:underline'>
                   {next.frontmatter.title}
                 </h3>
@@ -73,7 +70,6 @@ export const NewsQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        location
         featuredimage {
           alt
           image {
