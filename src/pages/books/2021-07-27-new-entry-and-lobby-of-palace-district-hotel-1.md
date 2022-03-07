@@ -3,7 +3,7 @@ templateKey: book-page
 title: Outdoor spaces of Paul Klee museum
 date: 2021-07-24T16:01:51.183Z
 featured: true
-download: https://www.google.com
+download: https://docs.google.com/spreadsheets/d/13LoQN9xXTEDn13xdhvgbbyveZwTbgEeqYZeMV90XKWU/edit?usp=sharing
 featuredimage:
   alt: Modern building with green outdoor space
   image: /img/ricardo-gomez-angel-opfpvxmrpp8-unsplash.jpg

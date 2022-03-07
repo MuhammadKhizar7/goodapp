@@ -23,7 +23,7 @@ class Search extends Component {
         ))
       } else if (
         this.state.results.length === 0 &&
-        this.state.query.length > 0
+        this.state.query.length > 2
       ) {
         return 'Please insert at least 3 characters'
       } else {
