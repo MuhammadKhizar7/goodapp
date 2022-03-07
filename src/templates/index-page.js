@@ -12,7 +12,6 @@ const IndexPage = ({ data }) => {
   const { edges: posts } = data.posts
   const { edges: books } = data.books
   const { edges: news } = data.news
-  console.log(fm)
   return (
     <Layout>
       <MyHelmet title={fm.title} description={fm.introduction.description} />

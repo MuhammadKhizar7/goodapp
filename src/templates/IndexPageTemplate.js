@@ -183,7 +183,7 @@ const IndexPageTemplate = ({
         </div>
       </div>
       {/* introduction */}
-      <div className='flex flex-wrap bg-orange-300'>
+      <div className='flex flex-wrap space-y-2 md:space-y-0 bg-orange-300'>
         <div className='w-full md:w-1/2 pt-4 lg:pt-10 max-h-96'>
           <div className='mx-7'>
             <h2 className='text-3xl font-bold text-gray-900'>
