@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import { Container, CardSet } from '../components/Sections'
 
-function NewsListPageTemplate({ heading, subheading, posts = [] }) {
+function BooksPageTemplate({ heading, subheading, posts = [] }) {
   return (
     <div>
       <Header heading={heading} subheading={subheading} />
@@ -13,4 +13,4 @@ function NewsListPageTemplate({ heading, subheading, posts = [] }) {
   )
 }
 
-export default NewsListPageTemplate
+export default BooksPageTemplate

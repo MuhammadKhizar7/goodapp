@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Khatme Nubuwwat means that Hazrat Muhammad (P.B.U.H) is the Last of the
+title: Khatme Nubuwat means that Hazrat Muhammad (P.B.U.H) is the Last of the
   Prophets.
 image: /img/ryan-pradipta-putra-MWJ7JpFBlGk-unsplash-min.jpg
 heading: انا آخرالانبياء واناآخرالامم

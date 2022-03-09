@@ -199,13 +199,13 @@ collections:
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/news/index.md'
         label: 'News'
-        name: 'news'
+        name: 'newslist-index'
         fields:
           - {
               label: 'Template Key',
               name: 'templateKey',
               widget: 'hidden',
-              default: 'news-page',
+              default: 'newslist-page',
             }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: Heading, name: heading, widget: string }
@@ -251,17 +251,6 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
-          - {
-              label: ContactForm,
-              name: contactform,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: string },
-                  { label: Image, name: image, widget: image },
-                ],
-            }
           - {
               label: Office,
               name: office,

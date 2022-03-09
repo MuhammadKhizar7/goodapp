@@ -1,6 +1,6 @@
 {
   "name": "goodapp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "description": "goodapp is a khatm-e-nabuwat london academy app",
   "author": "MuhammadKhizar7",
@@ -36,8 +36,7 @@
     "marked": "^4.0.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "remark-html": "^13.0.2"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",

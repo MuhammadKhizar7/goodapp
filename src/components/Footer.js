@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { graphql, useStaticQuery } from 'gatsby'
 
 const Footer = () => {
-  const { site, post, news } = useStaticQuery(
+  const { site, office, post, news } = useStaticQuery(
     graphql`
       query SITE_FOOTER_QUERY {
         site {
@@ -18,8 +18,18 @@ const Footer = () => {
             description
           }
         }
+        office: markdownRemark(
+          frontmatter: { templateKey: { eq: "contact-page" } }
+        ) {
+          frontmatter {
+            office {
+              address
+              phone
+            }
+          }
+        }
         post: allMarkdownRemark(
-          limit: 3
+          limit: 6
           filter: { frontmatter: { templateKey: { eq: "blog-page" } } }
           sort: { order: DESC, fields: frontmatter___date }
         ) {
@@ -33,7 +43,7 @@ const Footer = () => {
           }
         }
         news: allMarkdownRemark(
-          limit: 3
+          limit: 6
           filter: { frontmatter: { templateKey: { eq: "news-page" } } }
           sort: { order: DESC, fields: frontmatter___date }
         ) {
@@ -52,7 +62,9 @@ const Footer = () => {
   const { siteName, title, description } = site.siteMetadata
   const { nodes: posts } = post
   const { nodes: siteNews } = news
-
+  const {
+    office: { phone },
+  } = office.frontmatter
   return (
     <footer className='bg-orange-300'>
       <div className='max-w-7xl px-4 py-4 mx-auto sm:px-6 lg:px-8'>
@@ -137,12 +149,12 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className='text-gray-700 uppercase '>Contact</h3>
-                <span className='block mt-2 text-sm  hover:underline'>
-                  +1 526 654 8965
+                <span className='block mt-2 text-sm  hover:underline whitespace-pre-line'>
+                  {phone}
                 </span>
-                <span className='block mt-2 text-sm  hover:underline'>
-                  example@email.com
-                </span>
+                {/* <span className='block mt-2 text-sm  hover:underline whitespace-pre-line'>
+                  {address}
+                </span> */}
               </div>
             </div>
           </div>
