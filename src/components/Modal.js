@@ -17,7 +17,7 @@ const Modal = ({ show, setShow }) => {
             {/* <!-- Modal header --> */}
             <button
               type='button'
-              className='text-white bg-red-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center -mt-4 absolute -right-4 top-0'
+              className='text-white bg-red-400 hover:bg-red-300 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center -mt-4 absolute -right-4 top-0'
               data-modal-toggle='extralarge-modal'
               onClick={() => {
                 setShow(false)

@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
 
           <div className='mt-6 lg:mt-0 lg:flex-1'>
-            <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4'>
+            <div className='grid grid-cols-1 gap-6 sm:grid-cols-3 md:grid-cols-4'>
               <div>
                 <h3 className='text-gray-700 uppercase'>About</h3>
                 <Link
@@ -149,7 +149,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className='text-gray-700 uppercase '>Contact</h3>
-                <span className='block mt-2 text-sm  hover:underline whitespace-pre-line'>
+                <span className='block mt-2 text-sm whitespace-pre-line'>
                   {phone}
                 </span>
                 {/* <span className='block mt-2 text-sm  hover:underline whitespace-pre-line'>
