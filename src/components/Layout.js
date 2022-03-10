@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import useSiteMetadata from './SiteMetadata'
 import { useScroll } from '../hooks/useScroll'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const { NODE_ENV } = process.env
 
@@ -11,6 +12,23 @@ const Layout = ({ children }) => {
   // set global title and description on global layout, can be overwritten on a per-page basis with MyHelmet
   const { title, description } = useSiteMetadata()
   const { scrollY, scrollDirection } = useScroll()
+
+  const { site } = useStaticQuery(
+    graphql`
+      query SITE_NavBar_QUERY {
+        site {
+          siteMetadata {
+            siteName {
+              first
+              middle
+              last
+            }
+          }
+        }
+      }
+    `
+  )
+  const { siteName } = site.siteMetadata
 
   return (
     <div className='bg-white'>
@@ -21,6 +39,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <div className='flex flex-col h-screen justify-between'>
         <Navbar
+          siteName={siteName}
           className={`transition transform duration-300 ease-in-out ${
             scrollDirection === 'down' || scrollY < 200
               ? ''

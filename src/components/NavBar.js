@@ -51,7 +51,7 @@ const PartialNavLink = ({ children, ...rest }) => {
   )
 }
 
-const Navbar = ({ className }) => {
+const Navbar = ({ className, siteName }) => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [show, setShow] = useState(false)
 
@@ -76,9 +76,9 @@ const Navbar = ({ className }) => {
               />
               <div className='text-sm sm:text-xl font-bold uppercase xl:block lg:hidden md:hidden'>
                 <span className='text-gray-800 font-semibold'>
-                  Khatm-E-Nubuwat{' '}
+                  {siteName.first}{' '}
                 </span>
-                <span className='text-green-700'>Acandemy</span>
+                <span className='text-green-700'>{siteName.last}</span>
               </div>
             </Link>
 

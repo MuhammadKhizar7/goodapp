@@ -27,6 +27,7 @@ function ContactPageTemplate({ heading, subheading, office }) {
           <div className='gmap_canvas'>
             <iframe
               className='w-full'
+              title='map'
               height='500'
               id='gmap_canvas'
               src='https://maps.google.com/maps?q=387%20Katherine%20Road,%20Forest%20Gate%20London%20E7%208LT,%20United%20Kingdom&t=&z=13&ie=UTF8&iwloc=&output=embed'
