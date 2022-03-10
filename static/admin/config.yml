@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: MuhammadKhizar7/goodapp
+  repo: khatmenubuwat/goodapp
   branch: main
 
 local_backend: true
