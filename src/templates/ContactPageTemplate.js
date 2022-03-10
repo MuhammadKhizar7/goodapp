@@ -22,6 +22,22 @@ function ContactPageTemplate({ heading, subheading, office }) {
           />
         </div>
       </TextImageSplit>
+      <div className='mx-1'>
+        <div className='mapouter'>
+          <div className='gmap_canvas'>
+            <iframe
+              className='w-full'
+              height='500'
+              id='gmap_canvas'
+              src='https://maps.google.com/maps?q=387%20Katherine%20Road,%20Forest%20Gate%20London%20E7%208LT,%20United%20Kingdom&t=&z=13&ie=UTF8&iwloc=&output=embed'
+              frameborder='0'
+              scrolling='no'
+              marginheight='0'
+              marginwidth='0'
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
