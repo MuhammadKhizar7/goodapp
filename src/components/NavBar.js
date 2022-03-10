@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import Modal from '../components/modal'
+import Modal from '../components/Modal'
 
 const NAVLINK_CLASSES =
   'my-1 py-3 px-2 text-center font-medium hover:border-b-4 hover:border-green-700 md:mx-2 md:my-0 whitespace-no-wrap'
