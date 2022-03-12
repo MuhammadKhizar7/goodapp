@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
-import Navbar from 'src/components/Navbar'
-import Footer from 'src/components/Footer'
-import useSiteMetadata from 'src/components/SiteMetadata'
-import { useScroll } from 'src/hooks/useScroll'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import useSiteMetadata from '../components/SiteMetadata'
+import { useScroll } from '../hooks/useScroll'
 import { graphql, useStaticQuery } from 'gatsby'
 
 const { NODE_ENV } = process.env
