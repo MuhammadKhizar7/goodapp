@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/NavBar'
 import Footer from '../components/Footer'
 import useSiteMetadata from '../components/SiteMetadata'
 import { useScroll } from '../hooks/useScroll'
