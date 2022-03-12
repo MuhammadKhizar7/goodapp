@@ -5,7 +5,7 @@ date: 2021-07-24T16:01:51.183Z
 featured: true
 featuredimage:
   alt: Modern building with green outdoor space
-  image: /img/ricardo-gomez-angel-opfpvxmrpp8-unsplash.jpg
+  image: /img/haidan-jQUB81i93po-unsplash-min.jpg
 location: Bern, Swizerland
 ---
 

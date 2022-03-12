@@ -6,7 +6,7 @@ featured: true
 download: https://docs.google.com/spreadsheets/d/13LoQN9xXTEDn13xdhvgbbyveZwTbgEeqYZeMV90XKWU/edit?usp=sharing
 featuredimage:
   alt: Modern building with green outdoor space
-  image: /img/ricardo-gomez-angel-opfpvxmrpp8-unsplash.jpg
+  image: /img/yasmine-arfaoui-qbvAboqHkBg-unsplash-min.jpg
 ---
 
 Photo by [Ricardo Gomez Angel](https://unsplash.com/@ripato?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/kDVcVtpJNeA/urban-garden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
