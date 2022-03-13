@@ -21,7 +21,12 @@ const BookPagePreview = ({ entry, getAsset }) => {
     return (
       <BookPageTemplate
         title={data.title}
-        date={data.date}
+        date={new Date(data.date).toLocaleDateString('en-GB', {
+          weekday: 'short',
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+        })}
         image={image}
         body={body}
       />
