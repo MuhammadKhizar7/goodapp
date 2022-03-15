@@ -1,7 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
   repo: khatmenubuwat/goodapp
   branch: main
+  base_url: https://auth.khatmenubuwatacademy.workers.dev
+  auth_endpoint: /
 
 local_backend: true
 
