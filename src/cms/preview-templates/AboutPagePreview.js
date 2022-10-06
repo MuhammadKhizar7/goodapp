@@ -4,9 +4,6 @@ import { marked } from 'marked'
 
 const AboutPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
-  console.log('data', data)
-  // render markdown for cms preview
-  // @ts-ignore
   const html = marked(data.body)
 
   if (data) {

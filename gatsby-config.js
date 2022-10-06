@@ -1,18 +1,13 @@
-const siteUrl = process.env.URL || `http://www.khatmenubuwwat.org`
+const siteUrl = process.env.URL || `http://www.sportsnetwork.pk`
 
 module.exports = {
   siteMetadata: {
-    title: 'Khatm-e-Nabawat London Academy',
-    description: `Khatme Nubuwwat means that Hazrat Muhammad (P.B.U.H) is the Last of the Prophets. 
-    The process and routine of appointing Prophets and Messengers by Almighty Allah has been terminated,
-    finished, ended, stopped, and sealed. None will be appointed as prophet after Hazrat Muhammad (P.B.U.H).
-    His prophethood will continue until the judgement day and the day after,
-    only that person can claim to be a Muslim who believes in Khatme Nubuwwat and confesses.`,
-    siteUrl: 'http://www.khatmenubuwwat.org',
+    title: 'SportsNetwork',
+    description: `SportsNetwork`,
+    siteUrl: 'http://www.sportsnetwork.pk',
     siteName: {
-      first: 'Khatm-e-Nubuwat',
-      middle: 'London',
-      last: 'Academy',
+      first: 'Sports',
+      last: 'Network',
     },
   },
   plugins: [
@@ -39,7 +34,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`avif`, `webp`, `auto`],
+          quality: 90,
+        },
+      },
+    },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
@@ -72,13 +75,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Khatm-e-Nabawat london academy`,
-        short_name: `Khatm-e-Nabawat`,
+        name: `SportsNetwork`,
+        short_name: `SportsNetwork`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#047857`,
         display: `standalone`,
-        icon: `src/images/khatm-e-nubuwat_academy_icon.svg`,
+        icon: `src/images/image.svg`,
       },
     },
     {

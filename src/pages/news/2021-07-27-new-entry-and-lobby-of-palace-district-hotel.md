@@ -5,7 +5,7 @@ date: 2021-07-23T10:42:17.142Z
 featured: true
 featuredimage:
   alt: Hotel entry with lots of plants
-  image: /img/haidan-zY26j3pA65Y-unsplash-min.jpg
+  image: /img/pexels-photo-3657154.jpeg
 location: Budapest, Hungary
 ---
 

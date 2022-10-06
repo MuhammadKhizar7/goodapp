@@ -7,7 +7,7 @@ const Modal = ({ show, setShow }) => {
       <div
         className={
           (show ? '' : 'hidden') +
-          ' overflow-hidden bg-green-700 bg-opacity-75 fixed right-0 left-0 top-0 z-50 flex justify-center md:inset-0 h-model h-full'
+          ' overflow-hidden bg-blue-700 bg-opacity-75 fixed right-0 left-0 top-0 z-50 flex justify-center md:inset-0 h-model h-full'
         }
         id='extralarge-modal'
       >

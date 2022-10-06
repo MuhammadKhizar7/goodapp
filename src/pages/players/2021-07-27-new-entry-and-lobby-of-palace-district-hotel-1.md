@@ -1,12 +1,14 @@
 ---
-templateKey: news-page
+templateKey: player-page
 title: Outdoor spaces of Paul Klee museum
 date: 2021-07-24T16:01:51.183Z
 featured: true
 featuredimage:
   alt: Modern building with green outdoor space
-  image: /img/pexels-photo-3628912.jpeg
-location: Bern, Swizerland
+  image: /img/pexels-photo-7078119.jpeg
+tags:
+  - football
+  - player
 ---
 
 Photo by [Ricardo Gomez Angel](https://unsplash.com/@ripato?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/kDVcVtpJNeA/urban-garden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

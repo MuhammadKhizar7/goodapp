@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Modal from '../components/Modal'
 
 const NAVLINK_CLASSES =
-  'my-1 py-3 px-2 text-center font-medium hover:border-b-4 hover:border-green-700 md:mx-2 md:my-0 whitespace-no-wrap'
+  'my-1 py-3 px-2 text-center font-medium hover:border-b-4 hover:border-blue-700 md:mx-2 md:my-0 whitespace-no-wrap'
 
 // this link will be active when itself or deeper routes
 // are current
@@ -15,7 +15,7 @@ const isActive = ({ isCurrent }) => {
   return isCurrent
     ? {
         className:
-          NAVLINK_CLASSES + '  border-b-4 text-green-700 border-green-700',
+          NAVLINK_CLASSES + '  border-b-4 text-blue-700 border-blue-700',
       }
     : {}
 }
@@ -36,7 +36,7 @@ const isPartiallyActive = ({ isPartiallyCurrent }) => {
   return isPartiallyCurrent
     ? {
         className:
-          NAVLINK_CLASSES + '  border-b-4 text-green-700 border-green-700',
+          NAVLINK_CLASSES + '  border-b-4 text-blue-700 border-blue-700',
       }
     : {}
 }
@@ -58,14 +58,14 @@ const Navbar = ({ className, siteName }) => {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-30 bg-orange-300 shadow-xl ${className}`}
+        className={`fixed top-0 w-full z-30 bg-white shadow-xl ${className}`}
       >
         <div className='max-w-7xl px-4 sm:px-3 mx-auto md:flex md:justify-between md:items-center'>
           <div className='flex items-center justify-between py-2'>
             <Link className='flex items-center gap-1' to='/'>
               <StaticImage
-                src='../images/khatm-e-nubuwat_academy_icon.svg'
-                alt='Khatm-e-Nubuwat Academy icon'
+                src='../images/image.svg'
+                alt='logo icon'
                 className='w-8 h-8 sm:w-10 sm:h-10'
                 layout='constrained'
                 width={40}
@@ -78,7 +78,7 @@ const Navbar = ({ className, siteName }) => {
                 <span className='text-gray-800 font-semibold'>
                   {siteName.first}{' '}
                 </span>
-                <span className='text-green-700'>{siteName.last}</span>
+                <span className='text-blue-700'>{siteName.last}</span>
               </div>
             </Link>
 
@@ -86,7 +86,7 @@ const Navbar = ({ className, siteName }) => {
             <div className='flex md:hidden'>
               <button
                 type='button'
-                className='text-green-700 focus:outline-none '
+                className='text-blue-700 focus:outline-none '
                 aria-label='toggle menu'
                 onClick={() => setMenuOpen(!menuOpen)}
               >
@@ -115,29 +115,13 @@ const Navbar = ({ className, siteName }) => {
               >
                 Home
               </ExactNavLink>
-              <ExactNavLink
-                to='/introduction'
-                onClick={() => {
-                  setMenuOpen(false)
-                }}
-              >
-                Introduction
-              </ExactNavLink>
-              <ExactNavLink
-                to='/court-law'
-                onClick={() => {
-                  setMenuOpen(false)
-                }}
-              >
-                Court Law
-              </ExactNavLink>
               <PartialNavLink
-                to='/books'
+                to='/players'
                 onClick={() => {
                   setMenuOpen(false)
                 }}
               >
-                Books
+                Players
               </PartialNavLink>
               <PartialNavLink
                 to='/news'
@@ -147,14 +131,6 @@ const Navbar = ({ className, siteName }) => {
               >
                 News
               </PartialNavLink>
-              <PartialNavLink
-                to='/blog'
-                onClick={() => {
-                  setMenuOpen(false)
-                }}
-              >
-                Blog
-              </PartialNavLink>
               <ExactNavLink
                 to='/about'
                 onClick={() => {
@@ -162,14 +138,6 @@ const Navbar = ({ className, siteName }) => {
                 }}
               >
                 About
-              </ExactNavLink>
-              <ExactNavLink
-                to='/contact'
-                onClick={() => {
-                  setMenuOpen(false)
-                }}
-              >
-                Contact
               </ExactNavLink>
               <ExactNavLink
                 to='#'

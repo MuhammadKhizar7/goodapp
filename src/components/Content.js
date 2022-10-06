@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 /**
  * Section for markdown content (prose)
@@ -6,9 +6,11 @@ import React from "react"
  */
 function Content({ className, html }) {
   return (
-    <div className={`max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 ${className}`}>
+    <div
+      className={`max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 ${className}`}
+    >
       <div
-        className="prose mx-auto prose-green md:prose-lg"
+        className='prose mx-auto prose-blue md:prose-lg'
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </div>
