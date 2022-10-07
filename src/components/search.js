@@ -13,7 +13,7 @@ class Search extends Component {
       if (this.state.results.length > 0) {
         return this.state.results.map((page, i) => (
           <div
-            className='item-search p-3 bg-gray-50 hover:bg-green-600 hover:text-green-200 border-b-2 last:border-b-0 border-orange-200'
+            className='item-search p-3 bg-gray-50 hover:bg-blue-600 hover:text-blue-200 border-b-2 last:border-b-0 border-gray-200'
             key={i}
           >
             <Link to={page.url} className='link'>
@@ -21,11 +21,6 @@ class Search extends Component {
             </Link>
           </div>
         ))
-      } else if (
-        this.state.results.length === 0 &&
-        this.state.query.length > 2
-      ) {
-        return 'Please insert at least 3 characters'
       } else {
         return ''
       }
@@ -34,7 +29,7 @@ class Search extends Component {
     return (
       <div className={this.props.classNames}>
         <input
-          className='search__input bg-gray-50 border border-gray-300 text-gray-900 text-sm shadow outline-none focus:ring-green-500 focus:border-green-500 block w-full p-2.5'
+          className='search__input bg-gray-50 border border-gray-300 text-gray-900 text-sm shadow outline-none focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'
           type='text'
           onChange={this.search}
           placeholder={'Search'}

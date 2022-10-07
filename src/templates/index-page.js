@@ -7,21 +7,18 @@ import IndexPageTemplate from './IndexPageTemplate'
 
 const IndexPage = ({ data }) => {
   const { frontmatter: fm } = data.markdownRemark
-
   // featured posts
-  const { edges: posts } = data.posts
-  const { edges: books } = data.books
+  const { edges: player } = data.players
   const { edges: news } = data.news
   return (
     <Layout>
-      <MyHelmet title={fm.title} description={fm.introduction.description} />
+      <MyHelmet title={fm.title} description={fm.heading + fm.subheading} />
       <IndexPageTemplate
         heading={fm.heading}
         subheading={fm.subheading}
-        posts={posts}
-        books={books}
+        image={fm.image}
+        player={player}
         news={news}
-        introduction={fm.introduction}
       />
     </Layout>
   )
@@ -37,56 +34,9 @@ export const indexPageQuery = graphql`
         title
         heading
         subheading
-        introduction {
-          description
-          heading
-          image {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 1024, placeholder: BLURRED)
-              }
-            }
-          }
-          button {
-            label
-            url
-          }
-        }
-      }
-    }
-    posts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: {
-        frontmatter: {
-          templateKey: { eq: "blog-page" }
-          featured: { eq: true }
-        }
-      }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 200)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-            featuredimage {
-              alt
-              image {
-                childImageSharp {
-                  gatsbyImageData(
-                    width: 640
-                    placeholder: BLURRED
-                    aspectRatio: 1.5
-                  )
-                }
-              }
-            }
+        image {
+          childImageSharp {
+            gatsbyImageData(width: 1024, placeholder: BLURRED)
           }
         }
       }
@@ -127,11 +77,11 @@ export const indexPageQuery = graphql`
         }
       }
     }
-    books: allMarkdownRemark(
+    players: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
         frontmatter: {
-          templateKey: { eq: "book-page" }
+          templateKey: { eq: "player-page" }
           featured: { eq: true }
         }
       }

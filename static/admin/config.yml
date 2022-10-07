@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: khatmenubuwat/goodapp
+  repo: codefighter20/SportsNetwork
   branch: master
-  base_url: https://auth.khatmenubuwatacademy.workers.dev
+  base_url: https://auth.sportsnetwork.workers.dev
   auth_endpoint: /
 
 local_backend: true
@@ -11,37 +11,6 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Post'
-    folder: 'src/pages/Blog'
-    filter: { field: 'templateKey', value: 'blog-page' }
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    summary: '{{title}} | {{year}}-{{month}}-{{day}} | feature: {{fields.featured}}'
-    fields:
-      - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'blog-page',
-        }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Featured', name: 'featured', widget: boolean }
-      # - {label: "Description", name: "description", widget: "text"}
-      # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {
-          label: 'Featured Image',
-          name: 'featuredimage',
-          widget: object,
-          fields:
-            [
-              { label: Image, name: image, widget: image },
-              { label: Alt, name: alt, widget: string },
-            ],
-        }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      # - {label: "Tags", name: "tags", widget: "list"}
   - name: 'news'
     label: 'News'
     folder: 'src/pages/News'
@@ -72,25 +41,24 @@ collections:
             ],
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      # - {label: "Tags", name: "tags", widget: "list"}
-  - name: 'book'
-    label: 'Book'
-    folder: 'src/pages/Books'
-    filter: { field: 'templateKey', value: 'book-page' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+  - name: 'player'
+    label: 'Player'
+    folder: 'src/pages/Players'
+    filter: { field: 'templateKey', value: 'player-page' }
     create: true
-    slug: 'book-{{slug}}'
-    summary: '{{title}} | Book | feature: {{fields.featured}}'
+    slug: 'player-{{slug}}'
+    summary: '{{title}}  | feature: {{fields.featured}}'
     fields:
       - {
           label: 'Template Key',
           name: 'templateKey',
           widget: 'hidden',
-          default: 'book-page',
+          default: 'player-page',
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Featured', name: 'featured', widget: boolean }
-      - { label: 'Download Url', name: 'download', widget: 'string' }
       # - {label: "Description", name: "description", widget: "text"}
       # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {
@@ -104,7 +72,7 @@ collections:
             ],
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      # - {label: "Tags", name: "tags", widget: "list"}
+      - { label: 'Tags', name: 'tags', widget: 'list' }
   - name: 'pages'
     label: 'Pages'
     files:
@@ -120,87 +88,60 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Heading, name: heading, widget: string }
+          - { label: Image, name: image, widget: image }
           - { label: Subheading, name: subheading, widget: string }
           # - { label: "Body", name: "body", widget: "markdown" }
           # - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
           # - {label: Description, name: description, widget: string}
           # - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           # - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {
-              label: 'Introduction',
-              name: 'introduction',
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image,
-                    name: image,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Button,
-                    name: button,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Label, name: label, widget: string },
-                        { label: URL, name: url, widget: string },
-                      ],
-                  },
-                ],
-            }
-      - file: 'src/pages/introduction/index.md'
-        label: 'Introduction'
-        name: 'introduction'
+          # - {
+          #     label: 'Introduction',
+          #     name: 'introduction',
+          #     widget: object,
+          #     fields:
+          #       [
+          #         { label: Heading, name: heading, widget: string },
+          #         { label: Description, name: description, widget: text },
+          #         {
+          #           label: Image,
+          #           name: image,
+          #           widget: object,
+          #           fields:
+          #             [
+          #               { label: Image, name: image, widget: image },
+          #               { label: Alt, name: alt, widget: string },
+          #             ],
+          #         },
+          #         {
+          #           label: Button,
+          #           name: button,
+          #           widget: object,
+          #           fields:
+          #             [
+          #               { label: Label, name: label, widget: string },
+          #               { label: URL, name: url, widget: string },
+          #             ],
+          #         },
+          #       ],
+          #   }
+      - file: 'src/pages/players/index.md'
+        label: 'Players'
+        name: 'players'
         fields:
           - {
               label: 'Template Key',
               name: 'templateKey',
               widget: 'hidden',
-              default: 'introduction-page',
+              default: 'players-page',
             }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: 'src/pages/court-law/index.md'
-        label: 'Court Law'
-        name: 'court-law'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'court-law-page',
-            }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: 'src/pages/books/index.md'
-        label: 'Books'
-        name: 'books'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'books-page',
-            }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          # - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/news/index.md'
         label: 'News'
-        name: 'newslist-index'
+        name: 'news-index'
         fields:
           - {
               label: 'Template Key',
@@ -211,20 +152,7 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: 'src/pages/blog/index.md'
-        label: 'Blog'
-        name: 'bloglist-index'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'bloglist-page',
-            }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
+          # - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/about/index.md'
         label: 'About'
         name: 'about'
@@ -239,29 +167,3 @@ collections:
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: 'src/pages/contact/index.md'
-        label: 'Contact'
-        name: 'contact'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'contact-page',
-            }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - {
-              label: Office,
-              name: office,
-              widget: object,
-              fields:
-                [
-                  { label: Tagline, name: tagline, widget: string },
-                  { label: Location, name: location, widget: string },
-                  { label: Address, name: address, widget: markdown },
-                  { label: Phone, name: phone, widget: markdown },
-                  { label: Image, name: image, widget: image },
-                ],
-            }

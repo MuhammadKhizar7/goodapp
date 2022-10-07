@@ -4,12 +4,11 @@ title: About
 heading: About us
 subheading: Our values, mission and culture
 ---
-
 ### Reconnect people with nature
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dui, placerat nec suscipit nec, blandit nec felis. Nam imperdiet mattis sem id cursus. Nullam ipsum dui, elementum in dignissim et, molestie vel erat. Integer gravida sodales euismod. Nam hendrerit posuere leo, a mattis lorem gravida a. Quisque aliquet nisl quam, quis efficitur magna tempor vitae. Phasellus nec hendrerit metus. Vivamus quis massa fringilla, dapibus ligula a, porttitor libero. Nulla hendrerit non augue ut consectetur. Nulla vestibulum bibendum iaculis. Fusce vitae nunc eget metus suscipit facilisis ut non nulla. Vestibulum ac consectetur mi.
 
-![Rooftop gardens](/img/chuttersnap-nxjyzlbnyuq-unsplash.jpg 'Rooftop gardens')
+![Rooftop gardens](/img/pexels-photo-7078119.jpeg)
 
 ### Improve air quality and micro-climate
 

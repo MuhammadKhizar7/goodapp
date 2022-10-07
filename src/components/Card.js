@@ -10,8 +10,8 @@ function Card({ image, heading, date, excerpt, url, ...rest }) {
       {...rest}
     >
       <Image
-        image={image.image}
-        alt={image.alt}
+        image={image?.image}
+        alt={image?.alt}
         className='rounded-md overflow-hidden'
       />
       <div className='mt-4 flex items-baseline gap-x-2 justify-between'>

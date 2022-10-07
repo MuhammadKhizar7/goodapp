@@ -1,11 +1,11 @@
 {
-  "name": "goodapp",
+  "name": "SportsNetwork",
   "version": "1.0.0",
   "private": true,
-  "description": "goodapp is a khatm-e-nabuwat london academy app",
+  "description": "SportsNetwork is website for sports and news about ports tournaments",
   "author": "MuhammadKhizar7",
   "keywords": [
-    "gatsby, goodapp, netlify cms"
+    "gatsby, SportsNetwork, netlify cms"
   ],
   "scripts": {
     "develop": "gatsby develop",

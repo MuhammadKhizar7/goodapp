@@ -20,7 +20,6 @@ const Layout = ({ children }) => {
           siteMetadata {
             siteName {
               first
-              middle
               last
             }
           }
